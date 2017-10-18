@@ -1,0 +1,35 @@
+---
+layout:     post
+title:      linux命令
+subtitle:   route命令
+date:       2017-10-18
+author:     shijiehehai
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - Linux
+    - net
+---
+
+>虚机间不能互相访问的简单路由配置
+
+
+
+# linux命令---route
+### 创建路由
+    route add -net 目标网段/24 gw 本机网关
+24表示只有目标网段前三段是网络地址，第四段是本机地址,对应的掩码255.255.255.0。本地网关可以用ifconfig命令从所有本地网关里正确选择，也可以用netstat命令从已设的路由里参考填写。
+ 
+### 查看路由
+	route
+	Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+    10.128.x.0      promote.cache-d 255.255.255.0   UG    0      0        0 eth0
+    10.128.x.0      promote.cache-d 255.255.255.0   UG    0      0        0 eth0
+    10.139.x.0      *               255.255.255.0   U     0      0        0 eth0
+    link-local      *               255.255.0.0     U     1002   0        0 eth0
+    default         promote.cache-d 0.0.0.0         UG    0      0        0 eth0
+
+
+### 删除路由
+	route del -net 目标网段 netmask 网络掩码
+目标网段：add时候的目标网段。网络掩码：add时候目标网段后面的24表示掩码为255.255.255.0，可以route命令查看。
