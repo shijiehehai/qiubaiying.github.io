@@ -4,7 +4,7 @@ title:      CI加载library的问题
 subtitle:   CI+MX构建项目
 date:       2017-11-08
 author:     sjhh
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/WechatIMG2.jpeg
 catalog: 	 true
 tags:
     - php
