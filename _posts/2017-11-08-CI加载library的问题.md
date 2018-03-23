@@ -308,12 +308,45 @@ if ( ! isset($CI->$objectName))
 	return $this->_ci_init_library($class, '', $params, $object_name);
 }
 ```
+
+加载library
+
+- MX
+
+$CI->$_alias = new $class();
+
+$CI->_ci_classes[$class] = $_alias;
+
+$_alias是别名，没有别名时，即Library名， $class是library名
+
+- CI
    
+$CI->_ci_classes[$object_name] = $class;
+
+$CI->$object_name = new $class();
+
+$object_name是别名，默认是classM名字
    
-   
-   
-   
-   
+加载Model
+
+
+- MX
+
+$this->$_alias = new Model();
+
+$this->_ci_models[] = $_alias;
+
+$_alias是别名，没有别名时，即Model名
+
+
+- CI
+
+$this->$name = new Model();
+
+$this->_ci_models[] = $name;
+
+$_name也是别名，没有别名时，即Model名
+
    
 
 
