@@ -3,7 +3,7 @@ layout:     post
 title:      xcodebuild打包
 date:       2019-01-23
 author:     sjhh
-header-img: img/WechatIMG18723.jpeg
+header-img: img/WechatIMG61.jpeg
 catalog: 	 true
 tags:
     - iOS
