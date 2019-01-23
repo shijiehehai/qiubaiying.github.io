@@ -59,7 +59,7 @@ Information about project "YuQingTong":
 
 keychain中选中证书，标题即证书Identity。
 
-![](/Users/shijie/Desktop/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-01-23%20%E4%B8%8B%E5%8D%882.18.16.png)
+[![kAXrPP.md.png](https://s2.ax1x.com/2019/01/23/kAXrPP.md.png)](https://imgchr.com/i/kAXrPP)
 
 ### 描述文件UUID
 
@@ -70,7 +70,7 @@ Apple develop center导出包含项目APP ID和前文使用的证书的描述文
 ps:xcode8以上的描述文件的安装目录是/Users/用户名/Library/MobileDevice/Provisioning Profiles
 ```
 
-![](/Users/shijie/Desktop/屏幕快照 2019-01-23 下午2.29.51.png)
+![kAXjaR.png](https://s2.ax1x.com/2019/01/23/kAXjaR.png)
 
 ### Archive Commond Demo
 
